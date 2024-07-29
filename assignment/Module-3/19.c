@@ -1,5 +1,9 @@
+//.Calculate compound interest
+
+
 #include<stdio.h>
 int main()
 {
-	int 
+	int intrest;
+	priny
 }
