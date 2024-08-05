@@ -1,0 +1,18 @@
+functions:
+function is a block of code that we can use it again & again
+
+2 types of functions
+
+1 built in
+2 user define
+
+4 types
+
+1) function without parameters and withought return type
+
+3 steps
+1) function defination
+2) function calling
+
+with paramiters and with return types
+
