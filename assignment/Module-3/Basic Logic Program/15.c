@@ -17,7 +17,8 @@ int main() {
 
     while (schoolName[i] != '\0') {
        	
-        if (schoolName[i] == ' ' && schoolName[i + 1] != '\0') {
+        if (schoolName[i] == ' ' && schoolName[i + 1] != '\0') 
+        {
             printf("%c", schoolName[i + 1]);
         }
         i++;

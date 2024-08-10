@@ -3,16 +3,14 @@
 
 #include <stdio.h>
 
-#define NUM_EMPLOYEES 5
-
 int main() {
-    char names[NUM_EMPLOYEES][50];
-    double salaries[NUM_EMPLOYEES];
+    char names[5][50];
+    double salaries[5];
     double totalSalary = 0.0;
     double averageSalary;
-    int i; 
+    int i;
 
-    for (i = 0; i < NUM_EMPLOYEES; i++) {
+    for (i = 0; i < 5; i++) {
         printf("Enter the name of employee %d: ", i + 1);
         scanf("%s", names[i]);
         printf("Enter the salary of %s: ", names[i]);
@@ -20,11 +18,11 @@ int main() {
         totalSalary += salaries[i];
     }
 
-    averageSalary = totalSalary / NUM_EMPLOYEES;
+    averageSalary = totalSalary / 5;
 
     printf("\nTotal Salary: %.2lf\n", totalSalary);
     printf("Average Salary: %.2lf\n", averageSalary);
 
-    return 0;
 }
+
 

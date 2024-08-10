@@ -14,7 +14,8 @@ main()
 	{
 		printf("%d is equal to %d",a,b);
 		
-	}else{
+	}else
+	{
 		printf("%d is not equal to %d",a,b);
 	}
 }

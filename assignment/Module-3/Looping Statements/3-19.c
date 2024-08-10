@@ -19,8 +19,7 @@ int firstP()
         printf("\n");
     }
     printf("\n");
-}
-
+}O
 
 
 void secondP()
@@ -70,7 +69,7 @@ int i, j;
         }
         printf("\n");  
     }
-	printf("\n\n");
+	printf("\n");
 }
 
 fifthP()
@@ -115,6 +114,8 @@ sixthP()
         printf("\n"); 
     }
 }
+
+
 
 
 int main() 

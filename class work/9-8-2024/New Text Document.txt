@@ -1,0 +1,22 @@
+c++
+
+o.o.p.s
+
+object oriented programing system
+	class & object
+	inheritance 
+	pholymr
+	encapsulation
+	abstration
+
+constructor & destructor
+templets
+friend function
+#include<iostream>
+using namespace std;
+main()
+{
+	cout<<
+}
+
+.cpp

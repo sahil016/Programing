@@ -17,6 +17,5 @@ int main() {
         printf("You are categorized as Tall.\n");
     }
 
-    return 0;
 }
 

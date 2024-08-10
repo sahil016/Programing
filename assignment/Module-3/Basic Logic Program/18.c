@@ -1,4 +1,4 @@
-// Calculate person’s Annual salary
+// Calculate personï¿½s Annual salary
 
 #include <stdio.h>
 
@@ -12,7 +12,7 @@ int main() {
     annualSalary = monthlySalary * 12;
 
     
-////    printf("The annual salary is: %.2f rupees\n", annualSalary);/
+   printf("The annual salary is: %.2f rupees\n", annualSalary);
 
 }
 

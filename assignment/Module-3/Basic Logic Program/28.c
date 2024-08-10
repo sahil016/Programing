@@ -3,10 +3,6 @@
 
 #include <stdio.h>
 
-#define MONTHS_IN_YEAR 12
-#define DAYS_IN_YEAR 365
-#define LEAP_YEAR_DAYS 366
-
 int isLeapYear(int year) {
     return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
 }
@@ -19,16 +15,19 @@ int main() {
     printf("Enter the number of years: ");
     scanf("%d", &years);
     
-    if (isLeapYear(years)) {
-        total_days = years * LEAP_YEAR_DAYS;
+    int days_in_year = 365;
+    int leap_year_days = 366;
+    int months_in_year = 12;
+
+    if (isLeapYear(2024 + years)) {
+        total_days = years * leap_year_days;
     } else {
-        total_days = years * DAYS_IN_YEAR;
+        total_days = years * days_in_year;
     }
 
-    months = years * MONTHS_IN_YEAR;
+    months = years * months_in_year;
 
     printf("%d years is equivalent to %d months and %d days.\n", years, months, total_days);
 
-    return 0;
 }
 

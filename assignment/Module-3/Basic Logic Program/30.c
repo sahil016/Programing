@@ -3,9 +3,6 @@
 
 #include <stdio.h>
 
-#define DAYS_IN_YEAR 365
-#define LEAP_YEAR_DAYS 366
-
 int isLeapYear(int year) {
     return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
 }
@@ -15,9 +12,9 @@ int calculateDays(int years) {
     int i;  
     for (i = 0; i < years; i++) {
         if (isLeapYear(2024 + i)) {  
-            total_days += LEAP_YEAR_DAYS;
+            total_days += 366;
         } else {
-            total_days += DAYS_IN_YEAR;
+            total_days += 365;
         }
     }
     return total_days;
@@ -33,6 +30,19 @@ int main() {
     
     printf("%d years is equivalent to %d days.\n", years, total_days);
 
-    return 0;
+    int days;
+    
+    printf("Enter the number of days: ");
+    scanf("%d", &days);
+    
+    int years_from_days = days / 365;
+    int remaining_days = days % 365;
+
+    // Adjust for leap years
+    int leap_years = (days + 1) / 366; // Approximate number of leap years
+    years_from_days += leap_years;
+
+    printf("%d days is approximately equivalent to %d years and %d days.\n", days, years_from_days, remaining_days);
+
 }
 

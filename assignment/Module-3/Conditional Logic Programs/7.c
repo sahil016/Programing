@@ -16,6 +16,5 @@ int main() {
         printf("You have failed.\n");
     }
 
-    return 0;
 }
 
