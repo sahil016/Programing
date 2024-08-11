@@ -17,7 +17,6 @@ float calculateAmount(int choice, int quantity,float prices[])
 void displayBill(float total)
 {
 	printf("Your Total 	amount is : %.2f\n",total);
-	printf("Thanks for orderint!! see you next time");
 }
 
 int main()
