@@ -7,21 +7,23 @@
 #include <stdio.h>
 
 int main() {
-    int choice;
-
+    int choice;  
     printf("Select an option:\n");
     printf("1. Find day of the week\n");
     printf("2. Check if a character is a vowel or consonant\n");
     printf("Enter your choice (1 or 2): ");
-    scanf("%d", &choice);
+    scanf("%d", &choice);  
 
+    // Use switch case to handle the user's choice
     switch (choice) {
-        case 1: {
-            int day;
+        case 1: {  // If the user selects option 1
+            int day;  // Variable to store the day number
 
+            // Prompt the user to enter a number for the day of the week
             printf("Enter a number (1-7) for the day of the week: ");
-            scanf("%d", &day);
+            scanf("%d", &day);  // Read the day number
 
+            // Use switch case to determine the day of the week
             switch (day) {
                 case 1:
                     printf("Monday\n");
@@ -45,16 +47,19 @@ int main() {
                     printf("Sunday\n");
                     break;
                 default:
+                    // Handle invalid day numbers
                     printf("Invalid input! Please enter a number between 1 and 7.\n");
             }
-            break;
+            break;  // End of case 1
         }
-        case 2: {
-            char ch;
+        case 2: {  // If the user selects option 2
+            char ch;  // Variable to store the character
 
+            // Prompt the user to enter a character
             printf("Enter a character: ");
-            scanf(" %c", &ch); 
+            scanf(" %c", &ch);  // Read the character (note the space before %c to handle whitespace)
 
+            // Use switch case to determine if the character is a vowel or consonant
             switch (ch) {
                 case 'a':
                 case 'e':
@@ -66,17 +71,18 @@ int main() {
                 case 'I':
                 case 'O':
                 case 'U':
+                    // Character is a vowel
                     printf("%c is a vowel.\n", ch);
                     break;
                 default:
+                    // Character is a consonant
                     printf("%c is a consonant.\n", ch);
             }
-            break;
+            break;  // End of case 2
         }
         default:
             printf("Invalid choice! Please enter 1 or 2.\n");
     }
 
-    return 0;
 }
 

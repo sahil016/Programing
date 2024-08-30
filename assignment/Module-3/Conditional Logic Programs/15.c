@@ -28,7 +28,7 @@ int main() {
     totalMarksAll = marksPhysics + marksChemistry + marksMathematics;
     totalMarksMathPhysics = marksMathematics + marksPhysics;
 
-    // Determine eligibility
+	 // Determine eligibility based on given criteria
     if (marksMathematics >= 65 && marksPhysics >= 55 && marksChemistry >= 50 &&
         (totalMarksAll >= 190 || totalMarksMathPhysics >= 140)) {
         printf("The candidate is eligible.\n");
@@ -36,6 +36,5 @@ int main() {
         printf("The candidate is not eligible.\n");
     }
 
-    return 0;
 }
 

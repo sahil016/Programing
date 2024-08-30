@@ -9,6 +9,7 @@ int main() {
     printf("Enter the week number (1-7): ");
     scanf("%d", &weekNumber);
 
+	// Use switch case to determine the day of the week based on the week number
     switch (weekNumber) {
         case 1:
             printf("Weekday: Monday\n");

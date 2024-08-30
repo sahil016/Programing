@@ -10,7 +10,7 @@ main()
 	scanf("%d",&a);
 	printf("Enter the number 2 :");
 	scanf("%d",&b);
-	if(a==b)
+	if(a==b) //codition if a is equals to b
 	{
 		printf("%d is equal to %d",a,b);
 		

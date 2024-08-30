@@ -2,6 +2,7 @@
 
 
 #include <stdio.h>
+#include <string.h>  // Needed for strlen
 
 int main() {
     int customerID;

@@ -14,7 +14,7 @@ int main() {
         n = 1;
     } else if (m == 0) {
         n = 0;
-    } else { // m < 0
+    } else { //if  m < 0
         n = -1;
     }
 

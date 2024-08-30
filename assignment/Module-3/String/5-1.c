@@ -10,10 +10,12 @@ int main() {
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
+	// Loop through each character in the string until the null terminator is found
     while (str[length] != '\0') {
         length++;
     }
-
+    
+	 // Adjust the length if the last character is a newline (left by fgets)
     if (length > 0 && str[length - 1] == '\n') {
         length--;
     }

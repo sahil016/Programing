@@ -1,21 +1,25 @@
+//simple calculator
+
 #include <stdio.h>
 
 int main() {
     int choice;
     double num1, num2, result;
 
+	
     printf("Select an operation:\n");
     printf("1. Addition\n");
     printf("2. Subtraction\n");
     printf("3. Multiplication\n");
     printf("4. Division\n");
     printf("5. Modulo\n");
-    printf("Enter your choice (1-5): ");
+    printf("Enter your choice (1-5): ");	//selecting operation choice
     scanf("%d", &choice);
 
+	//user enters two numbers
     printf("Enter two numbers: ");
     scanf("%lf %lf", &num1, &num2);
-
+	
     switch(choice) {
         case 1:
             result = num1 + num2;

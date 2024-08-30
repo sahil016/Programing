@@ -1,3 +1,6 @@
+//print ascii value
+
+
 #include<stdio.h>
 main()
 {
@@ -5,4 +8,4 @@ main()
 	printf("Enter ascii charactervalu: ");
 	scanf("%c",&n);
 	printf("ascii value of character is %d",n);
-}
+} 

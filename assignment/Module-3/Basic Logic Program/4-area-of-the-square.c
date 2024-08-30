@@ -1,13 +1,18 @@
-#include <stdio.h>
+//area of the square
+
+#include <stdio.h>  
 
 int main() {
-    double side, area;
+    double side, area; 
 
+    
     printf("Enter the length of the side of the square: ");
-    scanf("%lf", &side);
+    scanf("%lf", &side);  
 
-    area = side * side;
+    // Calculate the area of the square
+    area = side * side;  // Area of a square is side length squared
 
     printf("The area of the square is: %.2lf\n", area);
+
 }
 

@@ -39,11 +39,9 @@ int main() {
             break;
         default:
             printf("Invalid month number.\n");
-            return 1; 
     }
 
     printf("Number of days in month %d of year %d is: %d\n", month, year, days);
 
-    return 0;
 }
 
