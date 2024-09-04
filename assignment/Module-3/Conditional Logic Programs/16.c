@@ -8,7 +8,8 @@ int main() {
 
     printf("Enter the temperature in Celsius: ");
     scanf("%f", &temperature);
-
+	
+	 // Check the temperature range and print the corresponding weather description
     if (temperature < 0) {
         printf("Freezing weather\n");
     } else if (temperature >= 0 && temperature < 10) {
