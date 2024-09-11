@@ -10,11 +10,12 @@ int main() {
     printf("Enter an integer value for m: ");
     scanf("%d", &m);
 
-    if (m > 0) {
+    if (m > 0)  // if m is bigger then 0
+	{
         n = 1;
     } else if (m == 0) {
         n = 0;
-    } else { //if  m < 0
+    } else { //if  m is smaller then 0
         n = -1;
     }
 

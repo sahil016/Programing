@@ -12,16 +12,19 @@ int main() {
     int i, even_count = 0, odd_count = 0;
     int even_sum = 0, odd_sum = 0;
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 10; i++)  // Loop to accept 10 numbers from the user
+	{
         printf("Enter number %d: ", i + 1);
         scanf("%d", &numbers[i]);
 
         if (numbers[i] % 2 == 0) {
-            even_count++;
-            even_sum += numbers[i];
-        } else {
-            odd_count++;
-            odd_sum += numbers[i];
+            even_count++;	// Increment the even number count
+            even_sum += numbers[i];	// Add to the sum of even numbers
+        } 
+		else 
+		{
+            odd_count++;	// Increment the odd number count
+            odd_sum += numbers[i];	// Add to the sum of odd numbers
         }
     }
 

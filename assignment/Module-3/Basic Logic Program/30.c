@@ -7,7 +7,8 @@ int isLeapYear(int year) {
     return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
 }
 
-int calculateDays(int years) {
+int calculateDays(int years) 
+{
     int total_days = 0;
     int i;  
     for (i = 0; i < years; i++) {
@@ -35,6 +36,7 @@ int main() {
     printf("Enter the number of days: ");
     scanf("%d", &days);
     
+     // Calculate the number of years from the given number of days
     int years_from_days = days / 365;
     int remaining_days = days % 365;
 

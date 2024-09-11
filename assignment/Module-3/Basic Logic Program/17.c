@@ -10,12 +10,15 @@ int main() {
     scanf("%f", &salary);
 
 
-    if (salary < 30000) {
-        premium = 0.05 * salary;
-    } else if (salary <= 50000) {
-        premium = 0.07 * salary;
+    if (salary < 30000)  // Determine the insurance premium based on salary
+	{
+        premium = 0.05 * salary; // For salaries less than 30,000, the premium is 5% of the salary
+    } 
+	else if (salary <= 50000) 
+	{
+        premium = 0.07 * salary;  // For salaries between 30,000 and 50,000 (inclusive), the premium is 7% of the salary
     } else {
-        premium = 0.10 * salary;
+        premium = 0.10 * salary;	 // For salaries greater than 50,000, the premium is 10% of the salary
     }
 
 

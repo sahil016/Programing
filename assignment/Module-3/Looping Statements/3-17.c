@@ -9,11 +9,13 @@ int main() {
     int num;           
 
     printf("Enter 5 Numbers:\n");
-    while (i < 5) {
+    while (i < 5) // loop reads 5 values 
+	{
         printf("Number %d: ", i + 1);
         scanf("%d", &num);
 
-        if (num % 2 == 0) {
+        if (num % 2 == 0)// Check if the number is even
+		{
             evenCount++;
         } else {
             oddCount++;

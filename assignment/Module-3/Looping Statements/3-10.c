@@ -10,15 +10,16 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &number);
 
-    number = abs(number);
+    number = abs(number);	// Convert the number to its absolute value to handle negative numbers
 
-    lastDigit = number % 10;
+    lastDigit = number % 10;  // Find the last digit of the number
 
-    temp = number;
-    while (temp >= 10) {
-        temp /= 10;
+    temp = number; // Initialize temp to the absolute number to find the first digit
+    while (temp >= 10) // Loop to find the first digit
+	{
+        temp /= 10; // Remove the last digit
     }
-    firstDigit = temp;
+    firstDigit = temp; // After the loop, temp will hold the first digit
 
     int sum = firstDigit + lastDigit;
 
