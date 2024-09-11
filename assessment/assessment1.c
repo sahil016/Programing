@@ -15,12 +15,14 @@ float calculateAmount(int choice, int quantity, float prices[]) {
 }
 
 // Function to display the final bill
-void displayBill(float total) {
+void displayBill(float total) 
+{
     printf("Your total amount is: %.2f\n", total);
     printf("Thanks for ordering!! See you next time.\n");
 }
 
-int main() {
+int main() 
+{
     const char *foods[] = {"Pizza", "Burger", "Dosa", "Idli"};
     float prices[] = {180, 100, 120, 150};
     int choice, quantity;
@@ -65,6 +67,5 @@ int main() {
     // Display the final bill
     displayBill(total);
 
-    return 0;
 }
 

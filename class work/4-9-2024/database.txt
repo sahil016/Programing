@@ -1,0 +1,40 @@
+CREATE DATABASE mydb;
+
+
+CREATE TABLE MYTABLE (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    name VARCHAR(40),
+    email VARCHAR(100) UNIQUE,
+    mobile BIGINT UNIQUE,
+    password VARCHAR(60)
+);
+
+
+
+INSERT INTO mytable(id,name,email,mobile,password) values(1,"Nishit","n@gmail.com",5647839,"n@123");
+
+
+INSERT INTO mytable(id,name,email,mobile,password) values(1,"Disha","m1@gmail.com",5647839,"n2@123");
+
+
+
+CREAT PROCEDURE selsectQuery()
+BEGIN
+SELECT * FROM mysql101;
+
+END;
+
+
+
+
+DELIMITER $$
+
+CREATE PROCEDURE hello()
+BEGIN
+select * fromn myseql101 WHERE is=1;
+END;
+
+
+
+
+call hello;
