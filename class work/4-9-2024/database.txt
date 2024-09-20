@@ -38,3 +38,48 @@ END;
 
 
 call hello;
+
+
+
+
+
+
+
+
+
+
+12-9-2024--------------------------
+
+TRIGER
+CREATE TABLE triggar_01(
+tid int,
+tname varchar1(30),
+tsubject varchar(30),
+tcity varchar(30),
+tprice int,
+tim_date timestamp,
+action_perform varchar(80)
+);
+
+
+
+
+CREATE TRIGGER trigger_03 BEFORE DELETE on mysql01 FOR EACH ROW
+INSERT INTO triggar_01(tid,tname,tsubjact,tcity,tprice,action_perform) VALUES (old.id,old.name,old.subject,old.city,old.price,"Data deleted!!");
+
+
+
+
+CREATE TABLE triggar_01(
+tid int,
+tFist_name varchar(30),
+tLast_name varchar(30),
+t varchar(30),
+tpriwce int,
+tim_date timestamp,
+action_perform varchar(80)
+);
+
+
+CREATE TRIGGER trigger_03 BEFORE DELETE on employee FOR EACH ROW
+INSERT INTO triggar_01(tid,tFist_name,tDepartment,tsalary,action_perform) VALUES (old.id,old.Fist_name,old.Last_name,old.salary,"Data deleted!!");

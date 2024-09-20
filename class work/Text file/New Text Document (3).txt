@@ -1,0 +1,8 @@
+pointer -> give address of second variable
+
+this
+getter
+setter
+
+abstraction
+data hiding
