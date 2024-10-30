@@ -1,5 +1,6 @@
 #include<stdio.h>
-main()
+/// @brief 
+int main()
 {
 	int n;
 	printf("Enter ascii charactervalu: ");
