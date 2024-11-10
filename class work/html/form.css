@@ -1,0 +1,110 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+}
+
+
+
+.container{
+    display: flex;
+    width: 800px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.left{
+    background: url('https://functorial.online/images/form-v2.jpg') ;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex:1;
+}
+
+.h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.left h3 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.right {
+    flex: 1;
+    padding: 50px;
+}
+
+.right h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #6a5af9;
+    outline: none;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.checkbox a {
+    color: #6a5af9;
+    text-decoration: none;
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6a5af9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5841d8;
+}
+

@@ -1,0 +1,4 @@
+# max_questions = min(choice, len(questions))
+
+# random.shuffle(questions)
+# selected_questions = questions[:max_questions]
