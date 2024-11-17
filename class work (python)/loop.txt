@@ -1,0 +1,18 @@
+Looop:
+
+repeat the particular statement  till the condition will setisfied
+
+2)
+1) enry
+
+while,for
+
+2) exit
+
+do while loop
+
+3) statement 
+
+1) start	intialize
+2) end		condition
+3) increament

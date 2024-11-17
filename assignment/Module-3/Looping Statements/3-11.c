@@ -12,7 +12,7 @@ int main() {
     for (i = 0; i < 5; i++)  // Loop to read 5 names from the user
 	{
         printf("Enter name %d: ", i + 1);
-        fgets(names[i], sizeof(names[i]), stdin);
+        fgets(names[i], sizeof(names[i], stdin);
 
     
         size_t len = strlen(names[i]);// Remove the newline character at the end, if present
