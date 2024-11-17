@@ -10,17 +10,18 @@ int main() {
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    originalNum = num;
+    originalNum = num; // Store the original number for later comparison
 
-    temp = num;  
+    temp = num;  // Determine the number of digits in the number
     for (; temp != 0; temp /= 10) {
         ++n;
     }
 
-    temp = num;  
-    for (; temp != 0; temp /= 10) {
-        remainder = temp % 10;
-        result += pow(remainder, n);
+    temp = num;  // Reset temp to the original number for further processing
+    for (; temp != 0; temp /= 10) // Calculate the sum of each digit raised to the power of n
+	{
+        remainder = temp % 10; // Extract the last digit
+        result += pow(remainder, n);  // Add the power of the digit to the result
     }
 
     if (result == originalNum) {

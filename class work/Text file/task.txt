@@ -1,0 +1,14 @@
+SELECT student.id,student.name,student.course FROM student RIGHT JOIN course faculty ON student.faulty;
+
+
+DELIMITER $$
+
+CREATE TRIGGER triggar_faculty
+AFTER UPDATE ON faculty
+FOR EACH ROW
+BEGIN
+    INSERT INTO triggar_faculty (tname, tcourse, tfid, action_perform)
+    VALUES (NEW.name, NEW.course, NEW.id, 'UPDATE');
+END$$
+
+DELIMITER ;

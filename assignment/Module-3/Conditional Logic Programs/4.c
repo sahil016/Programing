@@ -11,6 +11,7 @@ int main() {
     printf("Enter two integers: ");
     scanf("%d %d", &num1, &num2);
 
+	//print operation 
     printf("Choose an operation:\n");
     printf("1 - Addition\n");
     printf("2 - Subtraction\n");
@@ -20,6 +21,7 @@ int main() {
     printf("Enter the number corresponding to the operation: ");
     scanf("%d", &operation);
 
+	//using switch case to do choosed operation
     switch (operation) {
         case 1:
             result = num1 + num2;

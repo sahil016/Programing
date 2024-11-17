@@ -9,33 +9,38 @@
 
 
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-	float units, total_bill, surcharge;
-	
-	printf("Enter the number of units consumed: ");
-	scanf("%f",&units);
-	
-	if(units <= 50)
-	{
-		total_bill=units*0.50;
- 	}
-	else if(units <= 100)
-	{
-		total_bill=(50 * 0.50) + ((units - 50) * 0.75); 
-	}
-	else if (units <= 250) 
-	{
-        total_bill = (50 * 0.50) + (100 * 0.75) + ((units - 150) * 1.20);
-    } else {
-        total_bill = (50 * 0.50) + (100 * 0.75) + (100 * 1.20) + ((units - 250) * 1.50);
+    float units, total_bill, surcharge;
+
+    printf("Enter the number of units consumed: ");
+    scanf("%f", &units);  
+
+    // Calculate the total bill based on the number of units consumed
+    if (units <= 50) {
+        total_bill = units * 0.50;  // Rate for the first 50 units
+    } 
+    else if (units <= 100) {
+        // For units between 51 and 100
+        total_bill = (50 * 0.50) + ((units - 50) * 0.75);
+    } 
+    else if (units <= 250) {
+        // For units between 101 and 250
+        total_bill = (50 * 0.50) + (50 * 0.75) + ((units - 100) * 1.20);
+    } 
+    else {
+        // For units above 250
+        total_bill = (50 * 0.50) + (50 * 0.75) + (150 * 1.20) + ((units - 250) * 1.50);
     }
 
+    // Calculate the surcharge (20% of the total bill)
     surcharge = total_bill * 0.20;
-    total_bill += surcharge;
+    total_bill += surcharge;  // Add surcharge to the total bill
 
+    // Display the  bill
     printf("Total electricity bill: Rs. %.2f\n", total_bill);
-		
+
 }
+

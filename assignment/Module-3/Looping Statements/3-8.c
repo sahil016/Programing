@@ -12,17 +12,18 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &number);
 
-    number = abs(number);
+    number = abs(number); // Convert the number to its absolute value to handle negative numbers
 
-    if (number == 0) {
+    if (number == 0)  // If the number is 0, the maximum digit is 0
+	{
         maxDigit = 0;
     } else {
         while (number > 0) {
-            int digit = number % 10; 
+            int digit = number % 10; // Extract the last digit of the number
             if (digit > maxDigit) {
                 maxDigit = digit; 
             }
-            number /= 10; 
+            number /= 10; // Remove the last digit from the number
         }
     }
 

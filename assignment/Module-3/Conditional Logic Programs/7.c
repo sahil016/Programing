@@ -10,7 +10,8 @@ int main() {
     printf("Enter your marks: ");
     scanf("%d", &marks);
 
-    if (marks >= passingMark) {
+    if (marks >= passingMark) // checks if marks greater than passing mark
+	{
         printf("You have passed.\n");
     } else {
         printf("You have failed.\n");

@@ -4,7 +4,8 @@ int main() {
     int choice;
     float num1, num2, result;
 
-    while (1) {
+    while (1) { // Infinite loop to keep the menu active
+        // Display menu options
         printf("\n--- Menu ---\n");
         printf("1. Addition\n");
         printf("2. Subtraction\n");
@@ -22,6 +23,7 @@ int main() {
         printf("Enter two numbers: ");
         scanf("%f %f", &num1, &num2);
 
+        // Perform the operation based on user choice
         switch (choice) {
             case 1:
                 result = num1 + num2;
@@ -50,5 +52,4 @@ int main() {
     }
 
 }
-
 

@@ -13,11 +13,14 @@ int main() {
     printf("Enter the selling price of the item: ");
     scanf("%f", &sellingPrice);
 
-    profitOrLoss = sellingPrice - costPrice;
+    profitOrLoss = sellingPrice - costPrice;	 // Calculate profit or loss by subtracting the cost price from the selling price
 
-    if (profitOrLoss > 0) {
+    if (profitOrLoss > 0)	  // Determine if there is a profit, loss, or no profit/loss 
+	{
         printf("Profit: %.2f\n", profitOrLoss);
-    } else if (profitOrLoss < 0) {
+    }
+	else if (profitOrLoss < 0)  // If profitOrLoss is negative, it means there is a loss
+	{
         printf("Loss: %.2f\n", -profitOrLoss);
     } else {
         printf("No Profit No Loss\n");

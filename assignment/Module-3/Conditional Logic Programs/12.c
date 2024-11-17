@@ -11,6 +11,7 @@ int main() {
     
     int max;
     
+    // Check if 'a' is greater than or equal to both 'b' and 'c'
     if (a >= b && a >= c) {
         max = a;
     } else if (b >= a && b >= c) {

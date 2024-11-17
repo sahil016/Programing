@@ -9,7 +9,7 @@ int main()
 	printf("Enter a number to find factorial: ");
 	scanf("%d",&num);
 	
-	for(i=1;i<=num;i++)
+	for(i=1;i<=num;i++) // Loop to calculate the factorial of the number
 	{
 		factorial *= i;
 	}

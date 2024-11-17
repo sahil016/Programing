@@ -17,7 +17,8 @@ int main() {
     printf("Angle 3: ");
     scanf("%f", &angle3);
 
-    if (angle1 > 0 && angle2 > 0 && angle3 > 0 && (angle1 + angle2 + angle3 == 180)) {
+    if (angle1 > 0 && angle2 > 0 && angle3 > 0 && (angle1 + angle2 + angle3 == 180))   // Check if the angles are positive and if their sum is exactly 180 degrees
+	{
         printf("The angles can form a valid triangle.\n");
     } else {
         printf("The angles cannot form a valid triangle.\n");

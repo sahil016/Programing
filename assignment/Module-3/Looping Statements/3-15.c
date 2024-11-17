@@ -8,11 +8,12 @@ int main() {
     int num;
 
     printf("Enter 10 integers:\n");
-    while (i < 10) {
+    while (i < 10) // Loop to read 10 numbers and calculate their sum
+	{
         printf("Number %d: ", i + 1);
         scanf("%d", &num);
-        sum += num;
-        i++;
+        sum += num;  // Add the entered number to the sum
+        i++; // increment i
     }
 
     printf("\nSum of the entered numbers = %d\n", sum);

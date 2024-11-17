@@ -1,0 +1,14 @@
+inheritance:
+
+when one class derived the properties into another class it is called inheritance
+
+5 types
+
+1) single level inheritance
+2) multilevel
+3) muliple hierarchi
+4) hybrid
+
+A (parentclass,rootclass,base)
+|
+B(child,derived,sub-class)

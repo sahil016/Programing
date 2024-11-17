@@ -11,11 +11,13 @@ int main() {
     fgets(str, sizeof(str), stdin);
 
     printf("Individual characters:\n");
-    while (str[i] != '\0') {
-        if (str[i] != '\n') {
-            printf("%c\n", str[i]);
+    while (str[i] != '\0')  // Loop through each character in the string until the null terminator is found
+	{
+        if (str[i] != '\n') // Skip printing if the character is a newline (left by fgets)
+		{
+            printf("%c\n", str[i]);	 // Print the current character followed by a newline
         }
-        i++;
+        i++;	 // Move to the next character in the string
     }
 }
 

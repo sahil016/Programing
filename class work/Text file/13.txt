@@ -1,0 +1,7 @@
+CREATE TABLE Faculty (
+    id int,
+    name varchar(40),
+    course varchar(30),
+    fid int,
+    FOREIGN KEY (fid) REFERENCES student(id)
+);

@@ -46,11 +46,9 @@ int main() {
             break;
         default:
             printf("Invalid month number. Please enter a number between 1 and 12.\n");
-            return 1; // Exit with error code
     }
 
     printf("Number of days in month %d of year %d is: %d\n", monthNumber, year, days);
 
-    return 0;
 }
 

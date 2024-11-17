@@ -10,16 +10,20 @@ int main() {
 	int i;
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
+	
 
-    while (str[length] != '\0') {
+    while (str[length] != '\0') 
+	{
         length++;
     }
-
-    if (length > 0 && str[length - 1] == '\n') {
+	
+	if (length > 0 && str[length - 1] == '\n')  // Adjust length if the last character is a newline (left by fgets)
+	{
         length--;
     }
 
-    for (i = length - 1; i >= 0; i--) {
+    for (i = length - 1; i >= 0; i--) 
+	{
         printf(" %c", str[i]);
     }
 

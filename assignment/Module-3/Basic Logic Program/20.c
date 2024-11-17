@@ -6,11 +6,11 @@ int main() {
     printf("Enter your monthly salary: ");
     scanf("%lf", &salary);
 
-    insurance = salary * 0.10;
+    insurance = salary * 0.10;	// Calculate the insurance deduction (10% of salary)
 
-    loan = salary * 0.10;
+    loan = salary * 0.10;	// Calculate the loan deduction (10% of salary)
 
-    remainingSalary = salary - (insurance + loan);
+    remainingSalary = salary - (insurance + loan);	 // Calculate the remaining salary after deductions
 
     printf("Your remaining salary after deductions is: %.2lf\n", remainingSalary);
 

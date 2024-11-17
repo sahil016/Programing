@@ -8,7 +8,8 @@ int main() {
 
     printf("Enter the month number (1-12): ");
     scanf("%d", &monthNumber);
-
+    
+	 // Use switch case to determine the month name based on the month number
     switch (monthNumber) {
         case 1:
             printf("Month: January\n");

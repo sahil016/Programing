@@ -8,9 +8,10 @@ int main() {
     scanf("%d", &n);
 
     for (i = 1; i <= n; i++) {
-        double term = (double)i / (i + 1);
+        double term = (double)i / (i + 1);  // Calculate the current term
         
-        if ((i - 1) % 4 == 0) {
+        if ((i - 1) % 4 == 0) // Add or subtract the term based on its position in the series
+		{
             total_sum += term;  
         } else {
             total_sum -= term;  

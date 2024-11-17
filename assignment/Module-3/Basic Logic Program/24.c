@@ -15,10 +15,10 @@ int main() {
         scanf("%s", names[i]);
         printf("Enter the salary of %s: ", names[i]);
         scanf("%lf", &salaries[i]);
-        totalSalary += salaries[i];
+        totalSalary += salaries[i];	// Add the salary to totalSalary
     }
 
-    averageSalary = totalSalary / 5;
+    averageSalary = totalSalary / 5;	// Calculate the average salary
 
     printf("\nTotal Salary: %.2lf\n", totalSalary);
     printf("Average Salary: %.2lf\n", averageSalary);

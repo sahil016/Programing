@@ -14,8 +14,8 @@ int main() {
     } else {
         int i = 1;
         while (i <= num) {
-            factorial *= i;
-            i++; 
+            factorial *= i;  // Multiply factorial by the counter
+            i++; 	// Increment the counter
         }
 
         printf("Factorial of %d = %llu\n", num, factorial);

@@ -9,11 +9,14 @@ int main() {
     printf("Enter your height in centimeters: ");
     scanf("%f", &height);
 
-    if (height < 150.0) {
+    if (height < 150.0) //checks if height less than 150.0
+	{
         printf("You are categorized as Short.\n");
-    } else if (height >= 150.0 && height <= 180.0) {
+    } else if (height >= 150.0 && height <= 180.0) 
+	{
         printf("You are categorized as Average.\n");
-    } else {
+    } else 
+	{
         printf("You are categorized as Tall.\n");
     }
 

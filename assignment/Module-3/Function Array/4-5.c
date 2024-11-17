@@ -1,13 +1,14 @@
 //  WAP to take two Array input from user and sort them in ascending or descending order as per user’s choice
 
-
 #include <stdio.h>
 
 void sortArray(int arr[], int n, int ascending) {
     int i, j, temp;
     for (i = 0; i < n - 1; i++) {
         for (j = i + 1; j < n; j++) {
+            // Compare elements based on the sorting order
             if ((ascending && arr[i] > arr[j]) || (!ascending && arr[i] < arr[j])) {
+                // Swap elements if out of order
                 temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -16,6 +17,7 @@ void sortArray(int arr[], int n, int ascending) {
     }
 }
 
+// Function to print the elements of an array
 void printArray(int arr[], int n) {
     int i;
     for (i = 0; i < n; i++) {
@@ -47,12 +49,15 @@ int main() {
     printf("Choose sorting order:\n1. Ascending\n2. Descending\n");
     scanf("%d", &choice);
 
+    // Determine sorting order based on user choice
     int ascending = (choice == 1);
 
+    // Sort and print the first array
     printf("First array: ");
     sortArray(arr1, n1, ascending);
     printArray(arr1, n1);
 
+    // Sort and print the second array
     printf("Second array: ");
     sortArray(arr2, n2, ascending);
     printArray(arr2, n2);
