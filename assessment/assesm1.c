@@ -15,11 +15,6 @@ calculateAmount(int choice,int quantity)
 	return prices[choice - 1] * quantity;
 }
 
-displayBill(float total)
-{
-	printf("Your total amount is: %.2f\n", total);
-    printf("Thanks for ordering!! See you next time.\n");
-}
 
 int main()
 {
@@ -72,8 +67,6 @@ int main()
         }
     }
 
-    // Display the final bill
-    displayBill(total);
 
 }
 
