@@ -16,3 +16,10 @@ do while loop
 1) start	intialize
 2) end		condition
 3) increament
+
+
+
+options = []  # Correctly initialized as a list
+for i in range(4):
+    option = input(f"Enter option {i + 1}: ")
+    options.append(option)  # Appending to the list
