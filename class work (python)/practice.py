@@ -1,4 +1,5 @@
-n = int(input("Enter Number : "))
+a = [1, 2, 3, 4, 1, 2, 6] 
 
-for i in range(1,n+1):
-    print(i)
+a.reverse() 
+
+print(a) 

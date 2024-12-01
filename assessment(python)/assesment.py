@@ -15,37 +15,20 @@ questions = [
 ]
 
 
-a1="WELCOME TO TOPS QUIZ GAME CHALLANGE"
-a2="Select your role:"
-a3="-> Quiz Master  (press 1)"
-a4="-> quiz Creaker (press 2)"
-width=50 #variable to arrenge variable 
-width2=80  #variable to arrenge variable 
+head="""    WELCOME TO TOPS QUIZ GAME CHALLANGE"
+            Select your role:
+                -> Quiz Master      (press 1)"
+                -> quiz Creaker     (press 2)
+            """
 
 #infinit loop
 while True:
 
-    print(a1.center(width,"*"))                    ##
-    print(a2.center(width))                        ##
-    print(a3.center(width2))                       ## Add all variables with width to center it        
-    print(a4.center(width2))                       ##
+    print(head)
+    
+    choice=int(input("Enter your choice: ")) #Enter choice
 
-    choice=int(input("Enter your choice: ")) #enter choice
-
-    if choice==1:   #if choice is 1
-        
-        # #print all questions
-        # menu="press 1 for add quistions"
-        # menu1="press 2 for view quistions"
-        # menu2="press 3 for delete  quistions"
-        # menu3="press 4 for  exit"
-        # width=50
-     
-        # print(menu.center(width))
-        # print(menu1.center(width))
-        # print(menu2.center(width))
-        # print(menu3.center(width))    
-       
+    if choice==1:   #if choice is 
        
         # Menu for Quiz Master actions
         menu='''
