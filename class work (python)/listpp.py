@@ -16,10 +16,10 @@ l.reverse()#revers the list
 print(l) """
 
 
-""" s=[1,2,3,4,5]
+s=[1,2,3,4,5]
 n=list(filter(lambda x: x%2==0,s))
 print(n)
- """
+ 
 
 """ l=[]
 ev=[]
@@ -37,8 +37,10 @@ print(l)
 print(ev)
 print(od)
  """
+
+""" 
 l=[1,2,3,1,2]
-l1=[]
+l1=[]   
 l2=[]
 for i in l:
     if i not in l1:
@@ -46,3 +48,4 @@ for i in l:
 
     else:
         l2.append(i)
+         """
