@@ -1,6 +1,6 @@
 from crudpyth import *
 
-mydb = pymysql.connect(host="localhost",user="root",password="")
+mydb = pymysql.connect(host="localhost",user="root",password="",database="mydb36")
 mycursor = mydb.cursor()
 
 while True:
@@ -31,17 +31,17 @@ while True:
         name=input("Enter name : ")
         price=input("Enter price :")
 
-        query="update customer set name='%s,price='%s' where id='%s'"
+        query="update customer set name=%s,price=%s where id=%s"
         args=(name,price,id)
 
-        mycursor.execute(query % args)
+        mycursor.execute(query , args)
         mydb.commit()
         print("Data Updated sucessfuly!!")
     elif choice==3:
         id=int(input("Enter id : "))
-        query="delet from customer where id='%s'"
+        query="delete from customer where id='%s'"
         args = (id)
-        mycursor.execute(query & args)
+        mycursor.execute(query , args)
 
         print("Data deleted sucessfully!!")
 
@@ -54,6 +54,7 @@ while True:
         print(data)
     
     elif choice==5:
+        print("Thank you!!")
         break
     else:
         print("Invalid choice!!")
