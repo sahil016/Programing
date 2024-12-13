@@ -13,4 +13,3 @@ mycursor = mydb.cursor()
 mycursor.execute("create table if not exists customer(id int primary key auto_increment,name varchar(20),price int)")
 mydb.commit()
 
-
