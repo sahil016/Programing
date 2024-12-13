@@ -31,11 +31,7 @@ while True:
         name=input("Enter name : ")
         price=input("Enter price :")
 
-<<<<<<< HEAD
         query="UPDATE customer SET name = %s, price = %s WHERE id = %s"
-=======
-        query="update customer set name=%s,price=%s where id=%s"
->>>>>>> 30b43997758186c8f662be461d5045f3fa893ae7
         args=(name,price,id)
 
         mycursor.execute(query , args)
@@ -43,7 +39,7 @@ while True:
         print("Data Updated sucessfuly!!")
     elif choice==3:
         id=int(input("Enter id : "))
-        query="delete from customer where id='%s'"
+        query="delet from customer where id='%s'"
         args = (id)
         mycursor.execute(query , args)
 
@@ -58,7 +54,6 @@ while True:
         print(data)
     
     elif choice==5:
-        print("Thank you!!")
         break
     else:
         print("Invalid choice!!")
