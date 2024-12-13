@@ -58,3 +58,5 @@ for i in range(len(l)-1,-1,-1):
 # for i in range(1,n+1):
 #     print(i)  
 
+l=['sahi',1233,True]
+print("l : ",*l)
