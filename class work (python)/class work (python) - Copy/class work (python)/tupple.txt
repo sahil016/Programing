@@ -1,0 +1,39 @@
+tuple ()
+[]
+
+tuple is a collection of data type in python we can store multiple data in single variable
+
+immutable
+
+allow dublicate values
+
+dictonary is a collection data type in python store the multiple data in key value pair
+
+key 
+value
+
+items mutable
+
+
+multiple
+
+A       B
+    |
+    C
+
+
+Hierarchi
+
+        A 
+        |
+    B       C
+
+
+
+polymorphism
+
+poly many
+morphism forms
+
+1)overloading
+2)overriding
