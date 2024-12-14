@@ -58,5 +58,10 @@ for i in range(len(l)-1,-1,-1):
 # for i in range(1,n+1):
 #     print(i)  
 
-l=['sahi',1233,True]
+""" l=['sahi',1233,True]
 print("l : ",*l)
+ """
+
+n=input('Enter number : ')
+n1=n[2:-1]
+print(n1)

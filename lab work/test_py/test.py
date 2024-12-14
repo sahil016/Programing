@@ -1,4 +1,4 @@
-def add_expense(expenses, amount, category):
+""" def add_expense(expenses, amount, category):
     expenses.append({'amount': amount, 'category': category})
     
 def print_expenses(expenses):
@@ -46,4 +46,17 @@ def main():
             print('Exiting the program.')
             break
 
-main()
+main() """
+
+
+
+def palindrome():#defination 
+    s=input("Enter Name: ")
+    s1 = s[::-1]
+    print(s1)
+    if s==s1:
+        print("Palindrome!!")
+    else:
+        print("Not palindrome!!")
+
+palindrome()#call
