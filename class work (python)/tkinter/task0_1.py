@@ -1,4 +1,25 @@
 from tkinter import *
+from db import *
+from login import *
+
+
+
+def insert():
+    name = ename.get()
+    email = eemail.get()
+    mobile = emobile.get()
+    password = epassword.get()
+    cpassword = ecpassword.get()
+    query="INSERT INTO customer (id,name, email, mobile, password) VALUES (%s, %s,%s, %s, %s)"
+    args=(id,name,email,mobile,password)
+
+    mycursor.execute(query % args)
+    #mycursor.execute("INSERT INTO customer (id,name, email, mobile, password) VALUES (%s, %s, %s,%s, %s)",
+    #                  (id,name, email, mobile, password))
+    # mydb.commit()
+
+
+
 
 root = Tk()
 
@@ -12,22 +33,22 @@ name=Label(root,text="Name",font=("Arial",12,"bold"))
 name.place(x=50,y=100)
 
 
-email=Label(root,text="Name",fon=("Arial",12,"bold"))
-email.place(x=50,y=200)
+email=Label(root,text="Email",fon=("Arial",12,"bold"))
+email.place(x=50,y=150)
 
 
 mobile=Label(root,text="Mobile",font=("Arial",12,"bold"))
-mobile.place(x=50,y=250)
+mobile.place(x=50,y=200)
 
 
 password=Label(root,text="Password",font=("Arial",12,"bold"))
-password.place(x=50,y=300)
+password.place(x=50,y=250)
 
 
 cpassword=Label(root,text="Confirm-Password",font=("Arial",12,"bold"))
-cpassword.place(x=50,y=350)
+cpassword.place(x=50,y=300)
 
-insert=Button(root,text="Insert",font=("Arial",16,"italic"),fg="red")
+insert=Button(root,text="Insert",font=("Arial",16,"italic"),fg="red",command=insert)
 insert.place(x=50,y=350)
 
 update=Button(root,text="Update",font=("Arial",16,"italic"),fg="red")
@@ -37,7 +58,7 @@ update.place(x=150,y=350)
 delete=Button(root,text="Delete",font=("Arial",16,"italic"),fg="red")
 delete.place(x=270,y=350)
 
-login=Button(root,text="Log",font=("Arial",16,"italic"),fg="red")
+login=Button(root,text="Log",font=("Arial",16,"italic"),fg="red",command=login)
 login.place(x=370,y=350)
 
 eid=Entry(root,bg="yellow")
