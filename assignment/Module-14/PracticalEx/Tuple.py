@@ -1,13 +1,13 @@
 # 7) Write a Python program to convert a list into a tuple. 
-l=['hello',1233,True]
+""" l=['hello',1233,True]
 t=tuple(l)
-print(t)
+print(t) """
 
 
 # 8) Write a Python program to create a tuple with multiple data types. 
-t=(123,True,"World",[1,2,3],{'key':'value'})
+""" t=(123,True,"World",[1,2,3],{'key':'value'})
 for element in t:
-    print(f"{element}, {type(element)}")
+    print(f"{element}, {type(element)}") """
 
 # 9) Write a Python program to concatenate two tuples into one.
 """ t=(1,2,3)
@@ -29,5 +29,5 @@ print(t2)
  """
 
 # 12) Write a Python program to access the value from the last index in a tuple.
-t=('Hello','World','none')
-print(t[-1]) 
+""" t=('Hello','World','none')
+print(t[-1])  """
