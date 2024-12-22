@@ -14,10 +14,9 @@ def insert():
     args=(id,name,email,mobile,password)
 
     mycursor.execute(query % args)
-    #mycursor.execute("INSERT INTO customer (id,name, email, mobile, password) VALUES (%s, %s, %s,%s, %s)",
+     #mycursor.execute("INSERT INTO customer (id,name, email, mobile, password) VALUES (%s, %s, %s,%s, %s)",
     #                  (id,name, email, mobile, password))
-    # mydb.commit()
-
+    mydb.commit()
 
 
 

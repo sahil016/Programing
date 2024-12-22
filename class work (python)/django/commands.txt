@@ -1,0 +1,24 @@
+odoo 
+flask
+django
+
+o.r.m queryset
+
+object relation mapping
+
+website
+
+setup 
+virtual environment
+
+1) pip install virtualenv			//create environment 
+2)python -m venv myenv				/create 
+cd myenv					/change diractory to my env
+Scripts\activate					/env scrips activate
+pip install django				installs django framwork
+django-admin startproject myproject		creates project 
+cd mypreject					change directory to myproject
+django-admin startapp myapp			creates app
+python manage.py migrate			script exicute
+python manage.py runserver 			runs vertual server
+python manage.py createsuperuser		creates admin user
