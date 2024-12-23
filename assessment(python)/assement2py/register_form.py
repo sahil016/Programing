@@ -1,9 +1,20 @@
 from tkinter import *
-from db import *  # Ensure this is properly defined elsewhere
+from db import * 
 from tkinter import ttk
 
 def register():
-    # Function to handle the registration logic
+   
+    name=name
+    contact=contact
+    email=email
+    gender=gender
+    city=city
+    state=state
+
+    mycursor.execute("Insert in to user (name,contact,email,gender,city,state) values(%s,%s,%s,%s,%s)",
+                     (name,contact,email,gender,city,state))
+    mydb.commit()
+
     print("Registration successful!")
 
 # Create the main window
@@ -18,48 +29,48 @@ header.pack(fill=X)
 
 # Form fields
 # Name
-name_label = Label(root, text="Name *", font=("Arial", 12))
-name_label.place(x=30, y=60)
-name_entry = Entry(root, width=30, font=("Arial", 10))
-name_entry.place(x=150, y=60)
+name = Label(root, text="Name *", font=("Arial", 12))
+name.place(x=30, y=60)
+name = Entry(root, width=30, font=("Arial", 10))
+name.place(x=150, y=60)
 
 # Contact
-contact_label = Label(root, text="Contact *", font=("Arial", 12))
-contact_label.place(x=30, y=100)
-contact_entry = Entry(root, width=30, font=("Arial", 10))
-contact_entry.place(x=150, y=100)
+contact = Label(root, text="Contact *", font=("Arial", 12))
+contact.place(x=30, y=100)
+contact = Entry(root, width=30, font=("Arial", 10))
+contact.place(x=150, y=100)
 
 # Email
-email_label = Label(root, text="Email *", font=("Arial", 12))
-email_label.place(x=30, y=140)
-email_entry = Entry(root, width=30, font=("Arial", 10))
-email_entry.place(x=150, y=140)
+email = Label(root, text="Email *", font=("Arial", 12))
+email.place(x=30, y=140)
+email = Entry(root, width=30, font=("Arial", 10))
+email.place(x=150, y=140)
 
 # Gender
-gender_label = Label(root, text="Gender *", font=("Arial", 12))
-gender_label.place(x=30, y=180)
-gender_var = StringVar(value="Male")
-male_radio = Radiobutton(root, text="Male", value="Male", variable=gender_var, font=("Arial", 10))
-male_radio.place(x=150, y=180)
-female_radio = Radiobutton(root, text="Female", value="Female", variable=gender_var, font=("Arial", 10))
-female_radio.place(x=220, y=180)
+gender = Label(root, text="Gender *", font=("Arial", 12))
+gender.place(x=30, y=180)
+gender = StringVar(value="Male")
+male = Radiobutton(root, text="Male", value="Male", variable=gender, font=("Arial", 10))
+male.place(x=150, y=180)
+female = Radiobutton(root, text="Female", value="Female", variable=gender, font=("Arial", 10))
+female.place(x=220, y=180)
 
 # City
-city_label = Label(root, text="City *", font=("Arial", 12))
-city_label.place(x=30, y=220)
-city_combo = ttk.Combobox(root, width=27, font=("Arial", 10), state="readonly")
-city_combo["values"] = ("City1", "City2", "City3")  # Add actual city names here
-city_combo.place(x=150, y=220)
+city = Label(root, text="City *", font=("Arial", 12))
+city.place(x=30, y=220)
+city = ttk.Combobox(root, width=27, font=("Arial", 10), state="readonly")
+city["values"] = ("City1", "City2", "City3")  # Add actual city names here
+city.place(x=150, y=220)
 
 # State
-state_label = Label(root, text="State *", font=("Arial", 12))
-state_label.place(x=30, y=260)
-state_combo = ttk.Combobox(root, width=27, font=("Arial", 10), state="readonly")
-state_combo["values"] = ("State1", "State2", "State3")  # Add actual state names here
-state_combo.place(x=150, y=260)
+state = Label(root, text="State *", font=("Arial", 12))
+state.place(x=30, y=260)
+state = ttk.Combobox(root, width=27, font=("Arial", 10), state="readonly")
+state["values"] = ("State1", "State2", "State3")  # Add actual state names here
+state.place(x=150, y=260)
 
 # Register Button
-register_button = Button(root, text="Register", bg="orange", fg="white", font=("Arial", 12, "bold"), command=register)
-register_button.place(x=150, y=320)
+register = Button(root, text="Register", bg="orange", fg="white", font=("Arial", 12, "bold"), command=register)
+register    .place(x=150, y=320)
 
 root.mainloop()

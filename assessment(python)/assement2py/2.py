@@ -1,10 +1,11 @@
 from tkinter import * 
 from tkinter import messagebox
 from db import *
+from register_form import *
 
 # Functions for button actions
 def open_check_in_window():
-    messagebox.showinfo("Check In", "Check In functionality to be implemented.")
+    messagebox.showinfo("Check In",)
 
 def open_guest_list_window():
     messagebox.showinfo("Guest List", "Guest List functionality to be implemented.")
@@ -14,6 +15,8 @@ def open_check_out_window():
 
 def open_get_info_window():
     messagebox.showinfo("Get Info", "Guest Info functionality to be implemented.")
+ 
+
 
 # Create the main window
 window = Tk()
@@ -27,7 +30,7 @@ welcome_label.place(x=400, y=20)
 
 # Buttons for actions   
 buttons = [
-    ("1. CHECK IN", open_check_in_window),
+    ("1. CHECK IN", register),
     ("2. SHOW GUEST LIST", open_guest_list_window),
     ("3. CHECK OUT", open_check_out_window),
     ("4. GET INFO OF ANY GUEST", open_get_info_window),
