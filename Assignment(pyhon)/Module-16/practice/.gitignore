@@ -1,13 +1,8 @@
-"*.pyc" 
-"__pycache__" 
-"db.sqlite3" 
-"*.log" 
-"*.pot" 
-"*.py[cod]" 
-"*.swp" 
-"*.swo" 
-"media/" 
-"static/" 
-"*.env" 
-"*.sqlite3" 
-"*.bak" 
+# Ignore virtual environment files
+Lib/
+Scripts/
+pyvenv.cfg
+
+# Python temporary files
+*.pyc
+__pycache__/
