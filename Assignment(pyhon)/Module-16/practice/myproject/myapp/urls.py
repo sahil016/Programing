@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path,include
 from .import views
 from .views import create_student, get_students, update_student, delete_student
 
@@ -20,5 +20,7 @@ urlpatterns = [
     path('book_appointment/', views.book_appointment, name='book_appointment'),
     path('payment/<int:appointment_id>/', views.payment_page, name='payment_page'),
     path("payment/<int:appointment_id>/", views.payment_view, name="payment"),
+    # Social auth
+    path('auth/', include('social_django.urls', namespace='social')),
 ]
 

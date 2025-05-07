@@ -188,7 +188,7 @@ def book_appointment(request):
 
             return JsonResponse({
                 "message": "Appointment booked successfully!",
-                "appointment_id": appointment.id  # ✅ Send appointment ID
+                "appointment_id": appointment.id  # Send appointment ID
             })
 
         except Doctor.DoesNotExist:
