@@ -9,6 +9,7 @@ import razorpay
 import json
 from django.conf import settings
 # Create your views here.
+
 def home(request):
     return render (request,'home.html')
 
@@ -77,7 +78,7 @@ def user_login(request):
 
             if user.password == password:  
                 request.session['user_id'] = user.id  # ✅ Save user ID in session
-                return redirect('home')
+                return redirect('doctor_list')
             else:
                 msg = "Invalid Password!!"
                 return render(request, 'login.html', {'msg': msg})
@@ -162,7 +163,6 @@ def find_doctor(request):
     return render(request, 'find_doctor.html')
 
 @csrf_exempt
-
 def book_appointment(request):
     if request.method == "POST":
         if 'user_id' not in request.session:
@@ -227,10 +227,10 @@ def payment_view(request, appointment_id):
 
     context = {
         "appointment": appointment,
-        "RAZORPAY_KEY_ID": settings.RAZORPAY_KEY_ID,  # ✅ Pass Razorpay Key
+        "RAZORPAY_KEY_ID": settings.RAZORPAY_KEY_ID,  # Pass Razorpay Key
         "payment": {
             "amount": order_amount,
-            "order_id": order["id"],  # ✅ Pass Order ID
+            "order_id": order["id"],  # Pass Order ID
         }
     }
     
