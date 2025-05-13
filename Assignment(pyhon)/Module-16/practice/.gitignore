@@ -6,3 +6,7 @@ pyvenv.cfg
 # Python temporary files
 *.pyc
 __pycache__/
+
+# Ignore settings file containing sensitive information
+myproject/myproject/settings.py
+db.sqlite3
