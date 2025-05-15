@@ -11,7 +11,7 @@ void menu() {
 
 // Function to calculate the amount for a given choice and quantity
 float calculateAmount(int choice, int quantity) {
-    // Prices are hardcoded
+
     float prices[] = {180, 100, 120, 150};
     return prices[choice - 1] * quantity;
 }

@@ -1,7 +1,8 @@
-from tkinter import * 
+from tkinter import *
 from tkinter import messagebox
 from db import *
 from register_form import *
+from check import *
 
 # Functions for button actions
 def open_check_in_window():
@@ -15,41 +16,59 @@ def open_check_out_window():
 
 def open_get_info_window():
     messagebox.showinfo("Get Info", "Guest Info functionality to be implemented.")
- 
-
 
 # Create the main window
 window = Tk()
 window.title("Hotel Management")
-window.geometry("900x500")
-window.configure(bg="lightgrey")
+window.state("zoomed")  # Maximized the window
+window.configure(bg="lightgray")
 
+<<<<<<< HEAD
 # Title and Welcome labels
 welcome_label = Label(window, text="WELCOME", font=("Bahnschrift SemiBold Condensed", 24, "bold"), bg="lightgrey")
 welcome_label.place(x=400, y=20)
 d
 # Buttons for actions   
+=======
+# Left Frame: Contains the buttons
+left_frame = Frame(window, bg="lightgrey")
+left_frame.place(relx=0.1, rely=0.15)  # Adjust positioning as needed
+
+# Title
+welcome_label = Label(window, text="WELCOME", font=("Bahnschrift SemiBold Condensed", 36, "bold"), bg="lightgrey")
+welcome_label.place(relx=0.4, rely=0.05)
+
+# Button properties
+button_font = ("Arial", 18)
+button_width = 30
+button_height = 2
+
+>>>>>>> dc6ec8eed2c956645a807bac6b2848576f78d113
 buttons = [
-    ("1. CHECK IN", register),
+    ("1. CHECK IN", checkwin),
     ("2. SHOW GUEST LIST", open_guest_list_window),
     ("3. CHECK OUT", open_check_out_window),
     ("4. GET INFO OF ANY GUEST", open_get_info_window),
     ("5. EXIT", window.quit),
 ]
 
-for i, (text, command) in enumerate(buttons):
-    button = Button(window, text=text, font=("Arial", 14), width=40, height=2, command=command, bg='Light Gray', relief="raised")
-    button.place(x=100, y=80 + i * 60)
+# Add buttons in the left frame
+for idx, (text, command) in enumerate(buttons):
+    button = Button(left_frame, text=text, font=button_font, width=button_width, height=button_height, bg="Light Gray", relief="raised", command=command)
+    button.pack(pady=10)
 
-# Branding labels on the right
-branding_label1 = Label(window, text="HOTEL MANAGEMENT", font=("Bahnschrift SemiBold Condensed", 25, "bold"), bg="lightgrey", fg="black")
-branding_label1.place(x=550, y=80)
+# Right Frame: Contains the branding text
+right_frame = Frame(window, bg="lightgrey")
+right_frame.place(relx=0.6, rely=0.2)  # Adjust positioning as needed
 
-branding_label2 = Label(window, text="PYTHON TKINTER", font=("Bahnschrift SemiBold Condensed", 23, "bold"), bg="lightgrey", fg="black")
-branding_label2.place(x=570, y=130)
+branding_label1 = Label(right_frame, text="HOTEL MANAGEMENT", font=("Bahnschrift SemiBold Condensed", 30, "bold"), bg="lightgrey", fg="black")
+branding_label1.pack(pady=10)
 
-branding_label3 = Label(window, text="GUI", font=("Bahnschrift SemiBold Condensed", 75, "bold"), bg="lightgrey", fg="black")
-branding_label3.place(x=620, y=180)
+branding_label2 = Label(right_frame, text="PYTHON TKINTER", font=("Bahnschrift SemiBold Condensed", 30, "bold"), bg="lightgrey", fg="black")
+branding_label2.pack(pady=10)
+
+branding_label3 = Label(right_frame, text="GUI", font=("Bahnschrift SemiBold Condensed", 100, "bold"), bg="lightgrey", fg="black")
+branding_label3.pack(pady=20)
 
 # Run the application
 window.mainloop()
