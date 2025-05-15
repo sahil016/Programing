@@ -1,4 +1,7 @@
-a = [1, 2, 3, 4, 1, 2, 6] 
+n = input("Enter: ")
 
-a.remove()
-print(a)
+if len(n)%2==0:
+    print(n)
+else:
+    n1=int(len(n)/2)
+    print(n[n1-1]+n[n1]-n[n1+1])

@@ -116,5 +116,5 @@ class B(A):
         print(d)
 
 
-obj=B()
+obj=B() 
 obj.fun1()

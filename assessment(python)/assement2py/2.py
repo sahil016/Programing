@@ -27,7 +27,7 @@ window.configure(bg="lightgrey")
 # Title and Welcome labels
 welcome_label = Label(window, text="WELCOME", font=("Bahnschrift SemiBold Condensed", 24, "bold"), bg="lightgrey")
 welcome_label.place(x=400, y=20)
-
+d
 # Buttons for actions   
 buttons = [
     ("1. CHECK IN", register),

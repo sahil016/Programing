@@ -29,6 +29,7 @@ def middllechr():
          n1=int(len(n)/2)
          print(n[n1-1]+n[n1]+n[n1+1])  
 
+
 def petterm():
     for i in range(1,6):
         print("*"*i)
@@ -50,7 +51,4 @@ while True:
         petterm()
     elif choice==4:
         break
-       
-
-
  """

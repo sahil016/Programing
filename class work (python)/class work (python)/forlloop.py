@@ -46,15 +46,16 @@ fac=1
 for i in range(1,n+1):
     fac*=i
 print(fac)
+"""
 
 n = int(input("Enter number : "))
-prime=0
+count = 0
 
 for i in range(1,n+1):
     if(n%i==0):
-        prime+=1
+        count+=1
 
-if(prime==2):
-    print(n,"is prime")
+if count==2:
+    print(n,"is prime") 
 else:
-    print("Not prime")"""
+    print("Not prime")
