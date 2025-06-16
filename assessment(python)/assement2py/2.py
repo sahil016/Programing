@@ -23,6 +23,13 @@ window.title("Hotel Management")
 window.state("zoomed")  # Maximized the window
 window.configure(bg="lightgray")
 
+<<<<<<< HEAD
+# Title and Welcome labels
+welcome_label = Label(window, text="WELCOME", font=("Bahnschrift SemiBold Condensed", 24, "bold"), bg="lightgrey")
+welcome_label.place(x=400, y=20)
+d
+# Buttons for actions   
+=======
 # Left Frame: Contains the buttons
 left_frame = Frame(window, bg="lightgrey")
 left_frame.place(relx=0.1, rely=0.15)  # Adjust positioning as needed
@@ -36,6 +43,7 @@ button_font = ("Arial", 18)
 button_width = 30
 button_height = 2
 
+>>>>>>> dc6ec8eed2c956645a807bac6b2848576f78d113
 buttons = [
     ("1. CHECK IN", checkwin),
     ("2. SHOW GUEST LIST", open_guest_list_window),
